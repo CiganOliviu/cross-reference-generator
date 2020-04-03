@@ -13,3 +13,10 @@ pub fn get_contents_from_file (filename: String) -> String {
 
     return contents;
 }
+
+pub fn iterate_over_characters (contents: String) {
+
+    for iterator in contents.chars().enumerate() {
+        println!("{:?}", iterator);
+    }
+}

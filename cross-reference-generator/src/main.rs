@@ -4,5 +4,5 @@ fn main() {
 
     let data = files_io::get_contents_from_file ("src/data.data".to_string());
 
-    println!("{}", data);
+    files_io::iterate_over_characters (data);
 }
