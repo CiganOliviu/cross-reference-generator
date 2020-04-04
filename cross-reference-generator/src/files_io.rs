@@ -14,9 +14,21 @@ pub fn get_contents_from_file (filename: String) -> String {
     return contents;
 }
 
-pub fn iterate_over_characters (contents: String) {
+pub fn save_data_from_content (contents: String) -> std::vec::Vec<char> {
 
-    for iterator in contents.chars().enumerate() {
-        println!("{:?}", iterator);
+    let mut data_vector = Vec::new();
+
+    for iterator in contents.chars() {
+
+        data_vector.push(iterator);
+    }
+
+    return data_vector;
+}
+
+pub fn get_data_from_content (vector: std::vec::Vec<char>) {
+
+    for iterator in &vector {
+        print!("{} ", iterator);
     }
 }
