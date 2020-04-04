@@ -1,7 +1,0 @@
-[package]
-name = "cross-reference-generator"
-version = "0.1.0"
-authors = ["Cigan Oliviu David <43005157+CiganOliviu@users.noreply.github.com>"]
-edition = "2018"
-
-[dependencies]
